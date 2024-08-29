@@ -1,0 +1,36 @@
+.divCardImg {
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    .divImages {
+        display: flex;
+        align-items: center;
+    }
+
+    .trashIcon {
+        margin-left: 10px;
+        cursor: pointer;
+        color: rgba(255, 0, 0, 0.644);
+        display: none;
+    }
+
+    .divImages:hover .trashIcon {
+        display: inline-block;
+    }
+}
+
+.content {
+    padding: 0 !important;
+}
+
+.modalTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}

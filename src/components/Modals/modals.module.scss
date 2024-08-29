@@ -1,0 +1,30 @@
+.title {
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.divider {
+    padding-bottom: 1rem;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: center;
+
+    .button {
+        margin-right: 1rem;
+    }
+}
+
+.modalTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}

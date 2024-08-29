@@ -1,0 +1,78 @@
+.title {
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+}
+
+// TAGS 
+
+.divCard {
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .content {
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    .badgeStyle {
+        :hover {
+            background-color: red;
+        }
+    }
+
+    .input {
+        display: flex;
+        margin-bottom: 8px;
+
+        .divInput {
+            width: 100%;
+            display: flex;
+
+            .inputTag {
+                box-sizing: 'border-box';
+                border: 1px solid rgb(0, 0, 0);
+                background-color: '#f0f0f0';
+                width: 90%;
+                margin-right: 5px;
+                border-radius: 4px;
+            }
+
+            .buttonTag {
+                width: 10%;
+                padding: 0;
+                border-radius: 999999px;
+                border: 0.5px solid gray;
+
+                // background: linear-gradient(to left, #3498db, #2ecc71);
+
+                :hover {
+                    cursor: pointer;
+                }
+            }
+
+            .popoverButtons {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 5px;
+            }
+
+            .swatch {
+                width: 30px;
+                height: 30px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                cursor: pointer;
+            }
+
+            .disabledSwatch {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+        }
+
+    }
+}

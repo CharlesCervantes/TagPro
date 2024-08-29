@@ -1,0 +1,161 @@
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.divContainer {
+    display: flex;
+    width: 100%;
+}
+
+.imageTag {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divCanva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+
+.fabricCanva {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.canvasWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.divTools {
+    display: flex;
+    justify-content: flex-start;
+    width: 10%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+    color: rgb(121, 121, 121);
+    box-shadow: 0 2px 4px rgba(99, 99, 99, 0.1);
+    padding: 0.1rem;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.canva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 98%;
+    height: 98%;
+    margin: auto;
+}
+
+.tools {
+    margin: 0.6rem;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgba(139, 139, 139, 0.5);
+    border-radius: 1.5rem;
+}
+
+.button {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: small;
+
+    :hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.199);
+        border-radius: 10px;
+    }
+}
+
+.buttonTool {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px;
+    // width: 4rem;
+    // height: 4rem;
+    border-radius: 10px;
+    font-size: small;
+
+    button {
+        // color: rgb(124, 124, 124);
+        margin-top: 5px;
+        padding: 4px;
+        color: black;
+        border-radius: 5px;
+        transition: box-shadow 0.3s ease;
+        // border: 1px solid rgba(0, 0, 0, 0.103);
+
+        &:hover {
+            background-color: #d3d3d377;
+        }
+    }
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.ButtonSpan {
+    font-weight: 500;
+    font-size: x-small;
+}
+
+.buttonNone {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.zoomActive {
+    border-radius: 10px;
+    // box-shadow: 0 2px 4px rgba(5, 5, 5, 0.7);
+    transition: box-shadow 0.3s ease;
+    background-color: #d3d3d36b;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
